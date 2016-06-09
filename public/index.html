@@ -3,37 +3,27 @@
 <html>
 
 	<head>
-		<title>Clementine.js - The elegant and lightweight full stack JavaScript boilerplate.</title>
-		
-		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
+		<style>
+			.mark{
+				background: lightgreen;
+			}
+		</style>
 	</head>
 
-	<header>
-		<p>Welcome, <span id="display-name"></span>!</p>
-		<a class="menu" href="/profile">Profile</a>
-		<p>|</p>
-		<a class="menu" href="/logout">Logout</a>
-	</header>
-
 	<body>
-		<div class="container">
-			<img src="/public/img/clementine_150.png" />
-			<br />
-			<p class="clementine-text">Clementine.js</p>
-		</div>
-	
-		<div class="container">
-			<p>You have clicked the button <span id="click-nbr"></span> times.</p>
-			<br />
-			<div class="btn-container">
-				<button type="submit" class="btn btn-add">CLICK ME!</button>
-				<button class="btn btn-delete">RESET</button>
-			</div>
-		</div>
+		<h2>URL Shortener Microservice</h2>
+		<ul>
+			<li>User Story: I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</li>
+			<li>User Story: If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</li>
+			<li>User Story: When I visit that shortened URL, it will redirect me to my original link.</li>
+		</ul>
+		<h3>Example Input</h3>
+		<p><span class="mark">https://urlshortener-ani007.c9users.io/new/https://www.google.com</span></p>
+		<p><span class="mark">https://urlshortener-ani007.c9users.io/new/http://foo.com:80</span></p>
+		<h3>Example Output</h3>
+		<p>{"original_url": <span class="mark">"https://www.google.com"</span>, "short_url":<span class="mark">"https://urlshortener-ani007.c9users.io/8170"</span> }</p>
+		<p>Usage of <span class="mark">https://urlshortener-ani007.c9users.io/8170</span> will redirect to <span class="mark">https://www.google.com</span></p>
 		
-		<script type="text/javascript" src="common/ajax-functions.js"></script>
-		<script type="text/javascript" src="controllers/clickController.client.js"></script>
-		<script type="text/javascript" src="controllers/userController.client.js"></script>
 	</body>
 
 </html>
