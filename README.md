@@ -1,5 +1,3 @@
-Open https://urlshortener-ani007.c9users.io/ 
-
 According to task from freecodecamp, the application creates short version of url to redirect 
 
 Example of usage 
